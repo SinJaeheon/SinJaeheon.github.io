@@ -1,0 +1,134 @@
+@import "reset.css";
+
+body{
+    background-color: wheat;
+}
+
+h1 {
+    color: white;
+    font-size: 130px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgb(94, 94, 94);
+}
+
+.nameInput {
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.nameInput::placeholder {
+    color: white;
+}
+
+.nameInput:focus {
+    border-bottom: white solid 2px;
+    width: 250px;
+}
+
+.nameInput:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.nameInputPage {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.greetings {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgb(94, 94, 94);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.js-weather {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    text-align: right;
+    color: white;
+}
+
+.toDoText {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.toDoForm {
+    margin-bottom: 20px;
+}
+
+.toDoInput {
+    text-align: center;
+    background: none;
+    border: none;
+    height: 30px;
+    border-bottom: white solid 2px;
+    color: white;
+    font-size: medium;
+}
+
+.nameInput:focus, .toDoInput:focus {
+    outline: none;
+}
+
+
+.delBtn, .moveBtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.delBtn:focus, .moveBtn:focus {
+    outline: none;
+}
+
+.toDoList {
+    margin-bottom: 20px;
+}
+
+.lists {
+    color: white;
+    font-size: medium;
+}
+
+.nameInputPage,
+.center {
+    display: none;
+}
+
+.showing {
+    display: flex;
+}
+
+.bgImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.delLine {
+    text-decoration: line-through;
+}
